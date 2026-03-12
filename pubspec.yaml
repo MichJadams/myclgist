@@ -34,7 +34,10 @@ dependency_overrides:
       url: git@github.com:MichJadams/flutter_blue_plus_winrt.git
       ref: windows_fixes 
   bluetooth_low_energy_windows:
-    path: C:\Users\mjada\source\repos\bluetooth_low_energy\bluetooth_low_energy_windows
+    git:
+      url: https://github.com/MichJadams/bluetooth_low_energy.git
+      ref: updated-varient-arg-access
+      path: bluetooth_low_energy_windows
 
 flutter:
   uses-material-design: true

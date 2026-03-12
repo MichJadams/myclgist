@@ -76,9 +76,11 @@ packages:
   bluetooth_low_energy_windows:
     dependency: "direct overridden"
     description:
-      path: "C:\\Users\\mjada\\source\\repos\\bluetooth_low_energy\\bluetooth_low_energy_windows"
-      relative: false
-    source: path
+      path: bluetooth_low_energy_windows
+      ref: updated-varient-arg-access
+      resolved-ref: "36ce0962142d76fb1770905e2575b33dac4399eb"
+      url: "https://github.com/MichJadams/bluetooth_low_energy.git"
+    source: git
     version: "6.2.0"
   bluez:
     dependency: transitive
