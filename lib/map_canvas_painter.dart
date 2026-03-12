@@ -48,10 +48,6 @@ class MapCanvasPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    // Example: fill background
-    final bg = Paint()..color = Colors.grey.shade300;
-    canvas.drawRect(Offset.zero & size, bg);
-
     final paint = Paint()
       ..color = const Color.fromARGB(255, 0, 0, 0)
       ..strokeWidth = 3

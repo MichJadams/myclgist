@@ -27,6 +27,7 @@ dev_dependencies:
   flutter_lints: ^6.0.0
   drift_dev: ^2.15.0
   build_runner: ^2.4.8
+  flutter_launcher_icons: ^0.14.3
 
 dependency_overrides: 
   flutter_blue_plus_winrt: 
@@ -38,6 +39,23 @@ dependency_overrides:
       url: https://github.com/MichJadams/bluetooth_low_energy.git
       ref: updated-varient-arg-access
       path: bluetooth_low_energy_windows
+
+flutter_launcher_icons:
+  image_path: "assets/app_icon.png"
+  android: true
+  ios: true
+  web:
+    generate: true
+    image_path: "assets/app_icon.png"
+  linux:
+    generate: true
+    image_path: "assets/app_icon.png"
+  macos:
+    generate: true
+    image_path: "assets/app_icon.png"
+  windows:
+    generate: true
+    image_path: "assets/app_icon.png"
 
 flutter:
   uses-material-design: true

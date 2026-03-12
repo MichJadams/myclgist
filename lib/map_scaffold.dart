@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:whote_is_there/animated_void_painter.dart';
 import 'package:whote_is_there/bluetooth_scanner.dart';
 import 'package:whote_is_there/map_canvas_painter.dart';
 import 'package:whote_is_there/models/perl_data.dart';
@@ -30,8 +31,25 @@ double randomValue() {
   return value;
 }
 
-class _MapScaffildState extends State<MapScaffild> {
+class _MapScaffildState extends State<MapScaffild>
+    with SingleTickerProviderStateMixin {
   final List<StoneData> stones = [];
+  late final AnimationController _voidController;
+
+  @override
+  void initState() {
+    super.initState();
+    _voidController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 48),
+    )..repeat();
+  }
+
+  @override
+  void dispose() {
+    _voidController.dispose();
+    super.dispose();
+  }
 
   Future<void> onPearlAccepted(PearlData pearlData) async {
     widget.onPearlPlaced(pearlData);
@@ -79,6 +97,15 @@ class _MapScaffildState extends State<MapScaffild> {
 
         return Stack(
           children: [
+            AnimatedBuilder(
+              animation: _voidController,
+              builder: (context, _) => CustomPaint(
+                size: Size.infinite,
+                painter: AnimatedVoidPainter(
+                  animationValue: _voidController.value,
+                ),
+              ),
+            ),
             CustomPaint(size: Size.infinite, painter: MapCanvasPainter(stones)),
             Center(
               child: SizedBox(
