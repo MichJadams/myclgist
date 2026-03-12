@@ -1,0 +1,87 @@
+# ─── Build outputs ───────────────────────────────────────────────────────────
+/build/
+.dart_tool/
+/coverage/
+.buildlog/
+migrate_working_dir/
+
+# ─── Flutter plugin manifests (auto-generated) ───────────────────────────────
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# ─── Pub cache ───────────────────────────────────────────────────────────────
+.pub-cache/
+.pub/
+
+# ─── Dart generated files ────────────────────────────────────────────────────
+*.g.dart
+*.freezed.dart
+*.gr.dart
+*.mocks.dart
+
+# ─── IDE ─────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# ─── macOS ───────────────────────────────────────────────────────────────────
+.DS_Store
+.swiftpm/
+
+# ─── Misc editor artifacts ───────────────────────────────────────────────────
+*.class
+*.log
+*.pyc
+*.swp
+.atom/
+.history
+.svn/
+
+# ─── Secrets / environment ───────────────────────────────────────────────────
+.env
+.env.*
+.env.local
+.env.*.local
+**/secrets.*
+**/secret.*
+google-services.json
+GoogleService-Info.plist
+
+# ─── Android generated/build ─────────────────────────────────────────────────
+android/.gradle/
+android/local.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/.kotlin/
+
+# ─── iOS / macOS generated ───────────────────────────────────────────────────
+ios/Pods/
+ios/Flutter/ephemeral/
+ios/.last_build_id
+**/ios/Flutter/.last_build_id
+macos/Pods/
+macos/Flutter/ephemeral/
+
+# ─── Linux / Windows / Web generated ─────────────────────────────────────────
+linux/flutter/ephemeral/
+windows/flutter/ephemeral/
+
+# ─── Symbolication / obfuscation artifacts ───────────────────────────────────
+app.*.symbols
+app.*.map.json
+
+# ─── Dart analysis server ─────────────────────────────────────────────────────
+devtools_options.yaml
+
+# ─── Flutter project metadata (IDE/tool generated) ───────────────────────────
+.metadata
+
+# ─── Claude Code local data ──────────────────────────────────────────────────
+.claude/
+
+# ─── Project-specific ────────────────────────────────────────────────────────
+*.iml
+whote_is_there.iml
